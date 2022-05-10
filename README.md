@@ -19,13 +19,15 @@ Thank you to all the people who dropped by with kind words, suggestions and impr
 
 ## Quickstart (Ish)
 
+32 bit support only right now. :(
+
 Add `dtoverlay=dwc2` to `/boot/config.txt`
 
 Reboot!
 
 `sudo modprobe libcomposite`
 
-Grab the latest pi400kb for your system from releases: https://github.com/Gadgetoid/pi400kb/releases
+Grab the latest pi400kb for your system from releases: https://github.com/Shadowtrance/pi400kb/releases
 
 `chmod +x pi400kb`
 
@@ -41,7 +43,8 @@ Press `Ctrl + Shift + Raspberry` (on the grabbed keyboard) to exit.
 
 ### Mouse Support
 
-Pi 400 KB supports the official Raspberry Pi Mouse VID:PID = 093a:2510 by default, but other mice should work.
+The mouse that comes with the A500 mini 'THEMouse' works. (after compiling with the cmake arguments below and slight changes to the mouse usb hid descriptor)
+Compiled with `cmake .. -DMOUSE_DEV="/dev/input/by-id/usb-Retro_Games_LTD_THEMouse-event-mouse" -DMOUSE_VID=0x1C59 -DMOUSE_PID=0x0027`
 
 ### Autostart
 
