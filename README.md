@@ -17,7 +17,7 @@ Thank you to all the people who dropped by with kind words, suggestions and impr
   - [Building](#building)
   - [Custom Mouse/Keyboard Devices](#custom-mousekeyboard-devices)
 
-## Quickstart (Ish)
+## Quickstart (Ish) - A500 mini mouse version
 
 32 bit support only right now. :(
 
@@ -43,7 +43,7 @@ Press `Ctrl + Shift + Raspberry` (on the grabbed keyboard) to exit.
 
 ### Mouse Support
 
-The mouse that comes with the A500 mini 'THEMouse' works. (after compiling with the cmake arguments below and slight changes to the mouse usb hid descriptor)
+The mouse that comes with the A500 mini 'THEMouse' works. (after compiling with the cmake arguments below and slight changes to the mouse usb hid descriptor).  
 Compiled with `cmake .. -DMOUSE_DEV="/dev/input/by-id/usb-Retro_Games_LTD_THEMouse-event-mouse" -DMOUSE_VID=0x1C59 -DMOUSE_PID=0x0027`
 
 ### Autostart
